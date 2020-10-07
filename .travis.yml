@@ -6,3 +6,5 @@ install:
   - pip3 install coverage
 script:
   - pytest
+after_success:
+  - coverage report -m
